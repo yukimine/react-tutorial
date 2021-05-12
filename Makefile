@@ -1,2 +1,7 @@
+WEBPACK_COMMAND=yarn -s run webpack
+
 build:
-	yarn -s run webpack --mode development
+	${WEBPACK_COMMAND} --mode development
+
+server:
+	${WEBPACK_COMMAND} serve --mode development
