@@ -7,7 +7,6 @@ import Featured from './pages/Featured';
 import Settings from './pages/Settings';
 
 const app = document.getElementById('app');
-ReactDOM.render(<Layout />, app);
 ReactDOM.render(
   <Router>
     <Layout>
@@ -15,5 +14,6 @@ ReactDOM.render(
       <Route exact path="/archives" component={Archives}></Route>
       <Route exact path="/settings" component={Settings}></Route>
     </Layout>
-  </Router>
+  </Router>,
+  app
 );
