@@ -1,11 +1,5 @@
 SRC_PATH=./src
 
-build:
-	yarn -s run webpack --mode development
-
-server:
-	yarn -s run webpack serve --mode development
-
 static-analysis: eslint prettier
 
 static-analysis-fix: eslint-fix prettier-fix
