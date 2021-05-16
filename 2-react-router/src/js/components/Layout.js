@@ -8,8 +8,12 @@ export default class Layout extends React.Component {
       <div>
         <h1>KillerNews.net</h1>
         {this.props.children}
-        <Link to="/archives">archives</Link>,
-        <Link to="/settings">settings</Link>
+        <Link to="/archives">
+          <button className="btn btn-danger">archives</button>
+        </Link>
+        <Link to="/settings">
+          <button className="btn btn-success">settings</button>
+        </Link>
       </div>
     );
   }
